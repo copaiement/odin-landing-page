@@ -1,3 +1,53 @@
-
-
+/* style.css */
 /* Stylesheet for basic TOP landing page */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+
+body {
+    font-family: 'Roboto', sans;
+    background: #F9FAF8;
+}
+
+.header, .footer {
+    background: #1F2937;
+    color: #F9FAF8;
+}
+
+.hero-text {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.menu-bar, .hero-detail {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+button {
+    background: #3882F6;
+
+}
+
+.tile-desc {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.quote {
+    background: #E5E7EB;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.quote-author {
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.modal {
+    background: #3882F6;
+
+}
