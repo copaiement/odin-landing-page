@@ -9,17 +9,29 @@ body {
     font-family: 'Roboto', sans;
     background: #F9FAF8;
     margin: 0;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    
 }
 
 a {
     text-decoration: none;
     color: #F9FAF8;
+}
+
+.menu-bar {
+    /* add border-box to make everything fit */
+    box-sizing: border-box;
+    padding: 16px;
+    /* make the menu fixed to stay when scrolling */
+    position: fixed;
+    width: 100%;
+    background: #1F2937;
+    color: #F9FAF8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* subsection formatting */
@@ -30,27 +42,19 @@ a {
     display: flex;
     flex-direction: column;
     padding: 0px 100px;
-}
-
-.menu-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px;
+    /* add top padding to fill menu bar space */
+    padding-top: 48px;
 }
 
 .logo {
     height: fit-content;
-
 }
 
 ul {
     list-style: none;
     margin: none;
     padding: none;
-    
     display: flex;
-    align-items: center;
     gap: 16px;
 }
 
