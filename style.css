@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .header {
@@ -18,12 +19,10 @@ body {
     /* set up the flex columns for the header */
     display: flex;
     flex-direction: column;
-    
+    padding: 0px 80px;
 }
 
 .menu-bar {
-        /* DEBUG */
-        border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,16 +30,11 @@ body {
 }
 
 .logo {
-    /* DEBUG */
-    border: 1px solid red;
     height: fit-content;
 
 }
 
 ul {
-    /* DEBUG */
-    border: 1px solid red;
-
     list-style: none;
     margin: none;
     padding: none;
@@ -50,9 +44,26 @@ ul {
     gap: 16px;
 }
 
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 16px;
+    gap: 32px;
+
+}
+
 .hero-text {
     font-size: 48px;
     font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.hero-img {
+    /* EDIT THIS AFTER FINAL LAYOUT */
+    width: 400px;
+    display: flex;
+    flex-grow: 1;
 }
 
 .menu-bar, .hero-detail, .footer {
@@ -61,8 +72,22 @@ ul {
 }
 
 button {
+    /* buttons need their own font declared. they do not inherit from body? */
+    font-family: Roboto, sans-serif;
     background: #3882F6;
+    color: #F9FAF8;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 32px; 
+    flex-grow: 0;
+    margin: 16px 0px;
+}
 
+/* while we're working on buttons, add the border to the bottom button */
+.signup-border-btn {
+    border: 2px solid #F9FAF8;
 }
 
 .tile-desc {
@@ -87,7 +112,7 @@ button {
 
 .modal {
     background: #3882F6;
-
+    display: flex;
 }
 
 .footer {
