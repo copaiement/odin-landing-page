@@ -1,7 +1,10 @@
 /* style.css */
 /* Stylesheet for basic TOP landing page */
+
+/* import Roboto font and variations */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
 
+/* general formatting */
 body {
     font-family: 'Roboto', sans;
     background: #F9FAF8;
@@ -14,6 +17,12 @@ body {
     
 }
 
+a {
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+/* subsection formatting */
 .header {
     background: #1F2937;
     color: #F9FAF8;
@@ -107,11 +116,6 @@ button {
     margin: 16px 0px;
 }
 
-/* while we're working on buttons, add the border to the bottom button */
-.signup-border-btn {
-    border: 2px solid #F9FAF8;
-}
-
 .tile-desc {
     color: #1F2937;
     font-size: 36px;
@@ -152,7 +156,6 @@ button {
     font-style: italic;
     padding: 96px;
     text-align: left;
-
 }
 
 .quote-author {
@@ -165,7 +168,23 @@ button {
 
 .modal {
     background: #3882F6;
+    color: #F9FAF8;
     display: flex;
+    margin: 64px;
+    padding: 16px;
+    border-radius: 8px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+.alert-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.signup-border-btn {
+    border: 2px solid #F9FAF8;
 }
 
 .footer {
@@ -174,12 +193,5 @@ button {
     color: #F9FAF8;
     font-size: 12px;
     text-align: center;
-    padding: 16px;
-
-}
-
-/* general formatting settings */
-a {
-    text-decoration: none;
-    color: #F9FAF8;
+    padding: 24px;
 }
