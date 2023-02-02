@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
     
 }
 
@@ -50,6 +51,7 @@ ul {
     align-items: center;
     padding: 64px 16px;
     gap: 32px;
+    text-align: left;
 
 }
 
@@ -94,6 +96,30 @@ button {
     color: #1F2937;
     font-size: 36px;
     font-weight: 900;
+    margin-top: 32px;
+}
+
+.tile-container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 32px;
+    margin-bottom: 32px;
+}
+
+.tile {
+    width: 200px;
+}
+
+.thumbnail {
+    border: 3px solid #3882F6;
+    border-radius: 8px;
+    
+    /* thumbnail cropping and positioning code */
+    object-fit: cover;
+    object-position: top;
+    width: 200px;
+    height: 200px;
 }
 
 .quote {
